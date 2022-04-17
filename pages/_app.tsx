@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Purwa Aditya Wisnu Wardhana | Web Developer</title>
       </Head>
       <ThemeProvider attribute="class">
         <div className="grid grid-cols-12 gap-6 px-5 py-12 overflow-auto lg:h-screen bg-light-primary-light sm:px-20 md:px-24 lg:px-16 xl:px-28 dark:bg-dark-primary-dark dark:text-white">

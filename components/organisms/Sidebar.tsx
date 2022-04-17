@@ -55,9 +55,9 @@ function Sidebar() {
           rel="noreferrer"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
+          aria-label="Github"
         >
           <FaGithub className="w-10 h-10" />
-          <span className="hidden">Github</span>
         </motion.a>
         <motion.a
           href="https://www.linkedin.com/in/purwa-aditya-wisnu-wardhana/"
@@ -65,9 +65,9 @@ function Sidebar() {
           rel="noreferrer"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
+          aria-label="Linkedin"
         >
           <FaLinkedin className="w-10 h-10" />
-          <span className="hidden">LinkedIn</span>
         </motion.a>
       </div>
 
