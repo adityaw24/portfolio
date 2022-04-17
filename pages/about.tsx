@@ -5,7 +5,7 @@ import axios from 'axios'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../utils/animation'
 
-function index() {
+function About() {
   return (
     <motion.div
       className="flex flex-col flex-grow pt-1 overflow-y-clip lg:h-75vh"
@@ -48,19 +48,24 @@ function index() {
   )
 }
 
-export default index
+export default About
 
 export const getServerSideProps = async () => {
-  const res = await axios.get('http://localhost:3000/api/services', {
-    headers: {
-      Accept: 'application/json, text/plain, */*',
-      'User-Agent': '*'
+  // console.log(process.env.VERCEL_URL)
+
+  const res = await axios.get(
+    `${process.env.VERCEL_URL}/api/services`,
+    {
+      headers: {
+        Accept: 'application/json, text/plain, */*',
+        'User-Agent': '*'
+      }
     }
-  })
+  )
   const data = JSON.stringify(res.data)
 
   console.log('SERVER', service)
-  return { props: { service: data } }
+  return { props: { endpoint: process.env.VERCEL_URL } }
 }
 
 // export const getStaticProps = async () => {
