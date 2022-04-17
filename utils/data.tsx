@@ -140,7 +140,7 @@ export const projects: ProjectType[] = [
       'This app shows portfolio with short resume and some projects',
     image: '/images/portfolio.png',
     github: 'https://github.com/adityaw24/portfolio',
-    deployed: '',
+    deployed: 'https://purwa-aditya-wisnu-wardhana.vercel.app/about',
     category: ['react', 'nextjs'],
     techStack: ['React', 'Next Js', 'Typescript', 'Tailwind CSS']
   }
