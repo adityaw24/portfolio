@@ -1,5 +1,11 @@
 module.exports = {
-  images: {
-    domains: ['drive.google.com']
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/about',
+        permanent: true
+      }
+    ]
   }
 }

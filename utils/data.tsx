@@ -139,7 +139,7 @@ export const projects: ProjectType[] = [
     description:
       'This app shows portfolio with short resume and some projects',
     image: '/images/portfolio.png',
-    github: '',
+    github: 'https://github.com/adityaw24/portfolio',
     deployed: '',
     category: ['react', 'nextjs'],
     techStack: ['React', 'Next Js', 'Typescript', 'Tailwind CSS']

@@ -7,7 +7,7 @@ function Navbar() {
   const { route } = useRouter()
 
   useEffect(() => {
-    if (route === '/') setActiveItem('About')
+    if (route === '/about') setActiveItem('About')
     if (route === '/project') setActiveItem('Projects')
     if (route === '/resume') setActiveItem('Resume')
   }, [])
@@ -22,7 +22,7 @@ function Navbar() {
           activeItem={activeItem}
           setActiveItem={setActiveItem}
           name="About"
-          route="/"
+          route="/about"
         />
         <NavItem
           activeItem={activeItem}
