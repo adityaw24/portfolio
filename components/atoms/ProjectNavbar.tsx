@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { category } from '../../utils/data'
+import { category } from '../../pages/api/data'
 import { Category } from '../../utils/type'
 
 // const NavItem = ({

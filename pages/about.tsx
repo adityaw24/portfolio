@@ -1,7 +1,7 @@
 import React from 'react'
 import ServiceCard from '../components/atoms/ServiceCard'
-import { service } from '../utils/data'
-import axios from 'axios'
+import { service } from './api/data'
+// import axios from 'axios'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation, stagger } from '../utils/animation'
 
@@ -50,27 +50,27 @@ function About() {
 
 export default About
 
-export const getServerSideProps = async () => {
-  // console.log(process.env.VERCEL_URL)
+// export const getServerSideProps = async () => {
+//   // console.log(process.env.VERCEL_URL)
 
-  const res = await axios.get(
-    `${process.env.VERCEL_URL}/api/services`,
-    {
-      headers: {
-        Accept: 'application/json, text/plain, */*',
-        'User-Agent': '*'
-      }
-    }
-  )
-  const data = JSON.stringify(res.data)
+//   const res = await axios.get(
+//     `${process.env.VERCEL_URL}/api/services`,
+//     {
+//       headers: {
+//         Accept: 'application/json, text/plain, */*',
+//         'User-Agent': '*'
+//       }
+//     }
+//   )
+//   const data = JSON.stringify(res.data)
 
-  console.log('SERVER', service)
+//   console.log('SERVER', service)
 
-  /* Run API Host in Localhost */
-  // return { props: { endpoint: process.env.LOCAL_URL } }
+//   /* Run API Host in Localhost */
+//   // return { props: { endpoint: process.env.LOCAL_URL } }
 
-  return { props: { endpoint: process.env.VERCEL_URL } }
-}
+//   return { props: { endpoint: process.env.VERCEL_URL } }
+// }
 
 // export const getStaticProps = async () => {
 //   const res = await axios.get('http://localhost:3001/api/services', {

@@ -7,7 +7,7 @@ import {
   ProjectType,
   Skill,
   Tools
-} from './type'
+} from '../../utils/type'
 
 export const service: ProfileService[] = [
   {

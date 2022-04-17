@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ProjectCard from '../components/atoms/ProjectCard'
 import ProjectNavbar from '../components/atoms/ProjectNavbar'
 import { fadeInUp, routeAnimation, stagger } from '../utils/animation'
-import { projects as projectData } from '../utils/data'
+import { projects as projectData } from './api/data'
 import { Category } from '../utils/type'
 import { motion } from 'framer-motion'
 

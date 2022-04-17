@@ -1,6 +1,6 @@
 import React from 'react'
 import Bar from '../components/atoms/Bar'
-import { language, tools } from '../utils/data'
+import { language, tools } from './api/data'
 import { motion } from 'framer-motion'
 import { fadeInUp, routeAnimation } from '../utils/animation'
 
