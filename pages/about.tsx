@@ -65,6 +65,10 @@ export const getServerSideProps = async () => {
   const data = JSON.stringify(res.data)
 
   console.log('SERVER', service)
+
+  /* Run API Host in Localhost */
+  // return { props: { endpoint: process.env.LOCAL_URL } }
+
   return { props: { endpoint: process.env.VERCEL_URL } }
 }
 
